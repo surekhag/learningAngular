@@ -1,0 +1,26 @@
+
+<app-header></app-header>
+
+<h1>3. Function Binding</h1>
+<p>navigation works!</p>
+<button (click) = "showDate()"> Click to check date</button><br><br>
+
+<h1>4. Two way binding :</h1>
+<div>
+  <label>name:
+    <input [(ngModel)]="hero" placeholder="name"/>
+    </label>
+</div>
+
+<br>
+<p>{{hero}}</p>
+
+<h1>5. List (ngFor loop)</h1>
+<div *ngFor="let item of heroes" >
+  <p>
+    <span>{{item.id}}</span>
+    <span>{{item.name}}</span>
+
+
+  </p>
+</div>
